@@ -5,29 +5,28 @@ Refactor the `NewComponent` to use the `useState` hook for managing the `todos` 
 
 **Task**: Convert the `todos` array into a state variable using `useState`.
 
-#### Step 2: Adding New Todos
-Add functionality to allow the user to add new todos through an input field and a button. This will teach handling of form inputs and state updates based on user interaction.
+#### Step 2: Adding Styling
+Apply conditional styling to the todos to strike through the text of completed items. This will demonstrate dynamic CSS with React.
 
-**Task**: Implement an input field and button in `NewComponent` to add new todos to the state.
+**Task**: Add conditional styling to todos based on their `done` status.
 
 #### Step 3: Toggle Todo Completion
 Implement functionality to toggle the completion status of todos. This introduces event handling and updating specific items in an array stored in state.
 
 **Task**: Add an `onClick` event to each todo item that toggles its `done` status in the state.
 
-#### Step 4: Use Effect for Debugging
-Use the `useEffect` hook to log a message every time the list of todos changes. This demonstrates the basic usage of `useEffect` for reacting to state changes.
+#### Step 4: Adding New Todos
+Add functionality to allow the user to add new todos through an input field and a button. This will teach handling of form inputs and state updates based on user interaction.
 
-**Task**: Implement `useEffect` to log "Todos updated" every time the `todos` state changes.
+**Task**: Implement an input field and button in `NewComponent` to add new todos to the state.
 
-#### Step 5: Adding Styling
-Apply conditional styling to the todos to strike through the text of completed items. This will demonstrate dynamic CSS with React.
-
-**Task**: Add conditional styling to todos based on their `done` status.
 
 ### Enhanced NewComponent Skeleton
 Here's how you might begin modifying `NewComponent` for step 1:
 
+
+
+### Example of how to do state
 ```javascript
 function NewComponent() {
   const [person, setPerson] = useState({ name: "Bob", age: 25 });
