@@ -25,10 +25,11 @@ function NewComponent() {
 
   console.log(todosList);
 
+  let kleur = 4;
   return (
     <div>
       <h1>Hello {example}!</h1>
-      <p>
+      <p style={{color: kleur == 3 ? "red" : "green"}}>
         This is my dog {dog.name}, he's {dog.age} years old.
       </p>
       <ul>{todosList}</ul>
