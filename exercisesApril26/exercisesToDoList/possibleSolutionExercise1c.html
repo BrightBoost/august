@@ -13,14 +13,33 @@
     <script type="text/babel">
 
         //Select DOM element to render on
+        const domContainer = document.querySelector('#app')
 
         // Create root on selected DOM element
+        const root = ReactDOM.createRoot(domContainer);
 
         // Create ShoppingList component using JSX
         // Render a list of shopping items: "Apples", "Bananas", "Carrots"
+
+        const items = ["Apples", "Bananas", "Carrots"];
+        function ShoppingList() {
+            const listItems = [];
+            for(let item of items) {
+                listItems.push(<li key={item}>{item}</li>);
+            }
+            return (
+                <div>
+                    <h3>My shopping list</h3>
+                    <ul>
+                        {listItems}
+                    </ul>
+                </div>
+            )
+        
+        }
         
 
         // Render ShoppingList component at root
-
+        root.render(<ShoppingList />);
     </script>
 </body>
